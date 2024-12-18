@@ -1,0 +1,49 @@
+.frm_recuadro {
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.elemento {
+    height:100vh;
+    align-content: center;
+}
+
+.frm_contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.frm_elemento {
+    height: 40px;
+    width: 300px;
+    border-radius: 7px;
+    background-color: #b3ff00;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    font-weight: bolder;
+   }
+
+.btn {
+    width: 100px;
+    border-radius: 7px;
+    overflow: hidden;
+
+   }
+
+input:hover {
+    background-color: #e1fd9e;;
+}
+
+fieldset {
+    font-size: 1.5em;
+    text-align: center;
+}
