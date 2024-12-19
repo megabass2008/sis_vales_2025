@@ -13,7 +13,8 @@
   <?php
   include 'encabezado.php';
   ?>
-  <form action="" method="get">
+
+  <form class="form_vale" action="" method="get">
     <!-------CONTAINER------->
     <div class="contenedor_vale">
 
@@ -69,6 +70,8 @@
           </select>
         </div>
       </div>
+
+  </form>
 
 
 
@@ -127,12 +130,13 @@
         </div>
 
       </div>
-      <button class="btn">IMPRIMIR</button>
+      <button id="btn_imprimir" class="btn" type="button">IMPRIMIR</button>
+      
     </div>
 
-  </form>
+  
 
-
+<script src="./js/carga_form_vale.js"></script>
 </body>
 
 </html>
