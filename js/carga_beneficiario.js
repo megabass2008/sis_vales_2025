@@ -13,7 +13,6 @@ async function get_beneficiario(valor_fitro = "") {
 let input_buscador = document.querySelector(".inp_2");
 input_buscador.addEventListener("keyup", () => {
   let valor_filtro = input_buscador.value;
-  console.log(`el valor del input es: ${valor_filtro}`);
   let tr_ = document.querySelectorAll(".tr_body");
 
   // vaciar por completo el nodelist tr_

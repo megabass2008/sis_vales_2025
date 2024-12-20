@@ -5,7 +5,7 @@ export function even_cargar_deposito() {
   }
 
 export function cargar_deposito(data) {
-  let deposito = document.querySelector("#selec_deposito");
+  let deposito = document.querySelector(".selec_deposito");
   deposito.innerHTML = "";
   data.forEach((item) => {
     let option = document.createElement("option");
