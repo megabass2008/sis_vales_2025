@@ -1,0 +1,21 @@
+h1, input, label, span {
+    color: beige;
+}
+
+.contenedor {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+
+.encabezado {
+    height: 300px;
+    background-color: blue;
+}
+
+.detalle {
+    height: 300px;
+    background-color: blueviolet;
+}
