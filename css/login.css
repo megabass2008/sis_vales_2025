@@ -1,3 +1,8 @@
+body {
+    background-color: #000000;
+    color: #b3ff00;
+}
+
 .frm_recuadro {
     border-radius: 10px;
     border: solid 2px #ffffff;
@@ -47,3 +52,4 @@ fieldset {
     font-size: 1.5em;
     text-align: center;
 }
+

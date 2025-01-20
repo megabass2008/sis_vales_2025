@@ -31,7 +31,7 @@
 			<li>
 				<a href="#">VALES</a>
 				<ul class="menu-vertical">
-					<li><a href="#">Nuevo Vale</a></li>
+					<li><a href="./vale.php">Nuevo Vale</a></li>
 					<li><a href="#">Lista Vales</a></li>
 					<li><a href="#">Vales Interno</a></li>
 				</ul>
@@ -43,11 +43,11 @@
 					</li>
 					<li><a href="./frm_proveedor.php" target="_blank">Proveedor</a>
 					</li>
-					<li><a href="./frm_prefijo.php" target="_blank">Prefijo</a>
+					<li><a href="#" target="_blank">Prefijo</a>
 					</li>
-					<li><a href="./frm_deposito.php" target="_blank">Deposito</a>
+					<li><a href="#" target="_blank">Deposito</a>
 					</li>
-					<li><a href="./frm_municipio.php" target="_blank">Municipio</a>
+					<li><a href="#" target="_blank">Municipio</a>
 					</li>
 				</ul>
 			</li>

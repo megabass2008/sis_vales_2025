@@ -19,34 +19,29 @@
       
       <div class="bloque_encabezado">
         <form class="form_vale" enctype="multipart/form-data" method="post">
-          <label class="lbl_tit" for="">Vale</label>
+          <label class="lbl_tit" for="">Remito Interno</label>
 
           <label class="lbl_fecha" for="">Fecha</label>
-          <label class="lbl_vencimiento" for="">Vencimiento Vale</label>
+          <label class="lbl_vencimiento" for="">Nro Remito</label>
 
           
           <input class="inp_fecha" type="date" name="fecha" id="">
-          <input class="inp_vencimiento" type="date" name="vencimiento" id="">
+          <input class="inp_vencimiento" type="text" name="vencimiento" id="">
 
           <label class="lbl_expe" for="">Expediente</label>
-          <label class="lbl_deposito" for="">Desposito</label>
+          <label class="lbl_deposito" for=""></label>
 
           <input class="inp_expe" type="text" name="expediente" id="" placeholder="Ej: 954-10-24">
           <select class="selec_deposito" name="deposito_id" id=""></select>
 
-          <label class="lbl_prefijo_1" for="">Prefijo</label>
+          <label class="lbl_prefijo_1" for="">Origen</label>
           <select class="selec_prefijo_1" name="prefijo_id_b" id="selec_prefijo_1"></select>
 
-          <label class="lbl_beneficiario" for="">Beneficiario</label>
-          <input class="inp_beneficiario" type="text" name="" id="input_bene" placeholder="Apellido o Nombre o DNI (sin puntos)">
-          <select class="selec_bene_1" name="beneficiario_id_b" id="selec_bene"></select>
 
-          <label class="lbl_prefijo_2" for="">Prefijo</label>
+
+          <label class="lbl_prefijo_2" for="">Destino</label>
           <select class="selec_prefijo_2" name="prefijo_id_r" id="selec_prefijo_2"></select>
 
-          <label class="lbl_beneficiario_2" for="">Retira</label>
-          <input class="inp_beneficiario_2" type="text" name="" id="input_bene_2" placeholder="Apellido o Nombre o DNI (sin puntos)">
-          <select class="selec_bene_2" name="beneficiario_id_r" id="selec_bene_2"></select>
 
         </form>
       </div>
