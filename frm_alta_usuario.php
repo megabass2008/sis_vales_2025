@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php"); // Redirigir si no hay sesión
+  exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +16,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/alta_beneficiario.css">
-
-  <script src="./js/carga_municipio.js"></script>
-  <script src="./js/carga_prefijo.js"></script>
+  <script src="./js/carga_rol.js" defer></script>
+  <script src="./js/carga_usuario.js" defer></script>
 
   <title>Document</title>
 </head>
@@ -17,36 +27,27 @@
   include './encabezado.php';
   ?>
   <div class="titulo_frm">
-    <h2>Alta Beneficiario</h2>
+    <h2>Alta Usuario</h2>
   </div>
 
   <div class="contenedor">
 
-    <form class="area_frm" id="formulario" enctype="multipart/form-data" method="post">
+    <form class="area_frm" id="formulario" method="post">
 
       <div class="etiqueta"><label for="apellido_nombre">Apellido y Nombre</label></div>
-      <div><input type="text" name="apellido_nombre" id="apellido_nombre" placeholder="Apellido y Nombre sin comas(,)"></div>
+      <div><input type="text" name="apellido_nombre" id="apellido_nombre"></div>
 
       <div class="etiqueta"><label for="dni">DNI</label></div>
-      <div><input type="number" name="dni" id="dni" placeholder="DNI sin puntos(.)"></div>
+      <div><input type="number" name="dni" id="dni"></div>
 
-      <div class="etiqueta"><label for="telefono">Nro de Contacto</label></div>
-      <div><input type="number" name="telefono" id="telefono" placeholder="Nro sin punto sin guines (. -)"></div>
+      <div class="etiqueta"><label for="usuario">Usuario</label></div>
+      <div><input type="text" name="cliente" id="usuario"></div>
 
-      <div class="etiqueta"><label for="domicilio">Domicilio</label></div>
-      <div><input type="text" name="domicilio" id="domicilio"></div>
+      <div class="etiqueta"><label for="contraseña">Contraseña</label></div>
+      <div><input type="text" name="contrasena" id="contraseña"></div>
 
-      <div class="etiqueta"><label for="prefijo">Prefijo</label></div>
-      <div>
-        <select class="selec" name="prefijo_id" id="selec_prefijo_1">
-        </select>
-      </div>
-
-      <div class="etiqueta"><label for="municipio">Municipio</label></div>
-      <div>
-        <select class="selec" name="municipio_id" id="selec_municipio">
-        </select>
-      </div>
+      <div class="etiqueta"><label for="rol">Rol</label></div>
+      <div><select name="rol_id" id="rol"></select></div>
 
       <div class="etiqueta"><label for="">Activo</label></div>
       <div>
@@ -58,8 +59,8 @@
       <div></div>
 
       <div>
-        <button type="submit" class="guardar">GUARDAR</button>
-        <button class="cancelar">Cancelar</button>
+        <button id="guardar" class="guardar">GUARDAR</button>
+        <button id="cancelar" class="cancelar">Cancelar</button>
       </div>
 
     </form>
@@ -87,20 +88,18 @@
             <tr>
               <td class="td_ayn">Apellido y Nombre</td>
               <td class="td_dni">DNI</td>
-              <td class="td_contac">Nro Contacto</td>
-              <td class="td_prefijo">Prefijo</td>
-              <td class="td_muni">Municipio</td>
-              <td class="td_accion">Accion</td>
+              <td class="td_contac">Usuario</td>
+              <td class="td_prefijo">Rol</td>
+              <td class="td_accion">Activo</td>
             </tr>
           </thead>
 
         </table>
       </div>
 
-
     </div>
   </div>
-  <script src="./js/carga_beneficiario.js"></script>
+
 </body>
 
 </html>

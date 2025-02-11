@@ -11,14 +11,9 @@ $beneficiario_id_b = $_POST['beneficiario_id_b'];
 $prefijo_id_r = $_POST['prefijo_id_r'];
 $beneficiario_id_r = $_POST['beneficiario_id_r'];
 
-// $recurso_id[] = $_POST['recurso_id'];
-// $cantidad_n[] = $_POST['cantidad_n'];
-// $cantidad_l[] = $_POST['cantidad_l'];
-
 $recurso_id = json_decode($_POST['recurso_id'], true);
 $cantidad_n = json_decode($_POST['cantidad_n'], true);
-$cantidad_l = json_decode($_POST['cantidad_l'], true);
-
+$cantidad_l = strtolower(json_decode($_POST['cantidad_l'], true));
 
 $dsn = "mysql:host=$host;dbname=$BD";
 $conn = new PDO($dsn, $usuario, $password);

@@ -114,7 +114,6 @@ function alta_beneficiario() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         cargar_ultimo_reg(data);
       });
 

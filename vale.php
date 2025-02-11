@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php"); // Redirigir si no hay sesión
+  exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +27,7 @@
 
   <main class="contenedor_vale">
     <div class="div_1">
-      
+
       <div class="bloque_encabezado">
         <form class="form_vale" enctype="multipart/form-data" method="post">
           <label class="lbl_tit" for="">Vale</label>
@@ -24,7 +35,7 @@
           <label class="lbl_fecha" for="">Fecha</label>
           <label class="lbl_vencimiento" for="">Vencimiento Vale</label>
 
-          
+
           <input class="inp_fecha" type="date" name="fecha" id="">
           <input class="inp_vencimiento" type="date" name="vencimiento" id="">
 

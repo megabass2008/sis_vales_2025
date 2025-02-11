@@ -3,6 +3,18 @@ body {
     color: #b3ff00;
 }
 
+.cambio_pass {
+    display: block;
+}
+
+.contenedor_2_on {
+    display: block;
+}
+
+.contenedor_off {
+    display: block;
+}
+
 .frm_recuadro {
     border-radius: 10px;
     border: solid 2px #ffffff;
@@ -38,7 +50,8 @@ body {
    }
 
 .btn {
-    width: 100px;
+    width: 150px;
+    height: 50px;
     border-radius: 7px;
     overflow: hidden;
 

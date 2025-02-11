@@ -13,8 +13,14 @@
 		<img src="./img/logo.png" alt="" class="img imag">
 
 		<span class="titulo_span titulo">Sistema de Vales</span>
-		<span class="usuario">Usuario:</span>
-		<span class="salir">Salir</span>
+		<span class="usuario">Usuario:
+			<?php
+			echo strtoupper($_SESSION['nombre_completo']);
+			?>
+		</span>
+		<a href="salir.php" class="salir">
+			<span class="salir">Cerrar Sesion</span>
+		</a>
 	</div>
 
 	<nav>
@@ -52,7 +58,12 @@
 				</ul>
 			</li>
 
-			<li><a href="#">ADMINISTRACION</a></li>
+			<li><a href="#">ADMINISTRACION</a>
+				<ul class="menu-vertical">
+					<li><a href="frm_alta_usuario.php">Usuarios</a></li>
+					<li><a href="actualiza_pass.php">Cambiar Contraseña</a></li>
+				</ul>
+			</li>
 
 		</ul>
 	</nav>

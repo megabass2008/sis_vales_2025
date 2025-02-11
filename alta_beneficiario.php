@@ -1,9 +1,9 @@
 <?php
 require './config.php';
 
-$apellido_nombre = $_POST['apellido_nombre'];
+$apellido_nombre = strtolower($_POST['apellido_nombre']);
 $dni = $_POST['dni'];
-$domicilio = $_POST['domicilio'];
+$domicilio = strtolower($_POST['domicilio']);
 $telefono = $_POST['telefono'];
 $prefijo_id = $_POST['prefijo_id'];
 $municipio_id = $_POST['municipio_id'];
